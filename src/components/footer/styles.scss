@@ -1,0 +1,11 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+#footer {
+  @include mixins.center;
+  width: 100vw;
+  height: 7rem;
+  background-color: variables.$color-black;
+  color: variables.$color-gray;
+  padding: 10px;
+}
