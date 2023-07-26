@@ -1,0 +1,57 @@
+@use ".../../../../styles/variables.scss";
+
+#header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  justify-content: space-between;
+  gap: 1rem;
+
+  #header-title {
+    font-size: variables.$font-size-3;
+    color: variables.$color-white;
+  }
+
+  #hamburguer {
+    font-size: variables.$font-size-3;
+    color: variables.$color-white;
+  }
+
+  @media (min-width: variables.$breakpoint-responsive) {
+    #hamburguer {
+      display: none;
+    }
+  }
+}
+
+#container-buttons {
+  display: none;
+  width: 12rem;
+  padding: 1rem 0rem;
+
+  @media (min-width: variables.$breakpoint-responsive) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div {
+    height: 2.8rem;
+    background-color: variables.$color-white;
+    width: 1px;
+    border: 1px solid white;
+  }
+
+  p {
+    cursor: pointer;
+    font-size: variables.$font-size-5;
+    color: variables.$color-white;
+    transition: 0.3s ease-in;
+  }
+
+  p:hover {
+    color: variables.$color-green-2;
+  }
+}
