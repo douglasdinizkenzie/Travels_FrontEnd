@@ -10,5 +10,12 @@
   color: variables.$color-white;
   justify-content: space-between;
   border-radius: variables.$radius;
-  border: none;
+  border: 1px solid transparent;
+  transition: 0.4s ease;
+
+  &:hover {
+    background-color: variables.$color-white;
+    border: 1px solid variables.$color-green;
+    color: variables.$color-green;
+  }
 }
