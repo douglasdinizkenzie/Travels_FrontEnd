@@ -7,7 +7,7 @@ export const MainPage = () => {
   return (
     <>
       <div id="container-img">
-        <Header optionOne={"Login"} optionTwo={"SignIn"} />
+        <Header optionOne={"Login"} optionTwo={"Sign Up"} />
         <MainContent />
       </div>
       <Footer />

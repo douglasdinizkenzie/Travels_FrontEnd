@@ -28,7 +28,7 @@
 
 #container-buttons {
   display: none;
-  width: 12rem;
+  width: 13rem;
   padding: 1rem 0rem;
 
   @media (min-width: variables.$breakpoint-responsive) {
@@ -53,5 +53,20 @@
 
   p:hover {
     color: variables.$color-green-2;
+  }
+}
+
+#container-buttons-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  button {
+    text-align: start;
+    color: variables.$color-gray-3;
+    background-color: variables.$color-gray-2;
+    border-radius: variables.$radius;
+    padding: 1rem;
+    font-size: variables.$font-size-7;
   }
 }
