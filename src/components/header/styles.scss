@@ -8,7 +8,6 @@
   padding: 0.5rem 0.8rem;
   justify-content: space-between;
   gap: 1rem;
-  border: 1px solid red;
 
   #header-title {
     font-size: variables.$font-size-3;
@@ -54,5 +53,20 @@
 
   p:hover {
     color: variables.$color-green-2;
+  }
+}
+
+#container-buttons-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  button {
+    text-align: start;
+    color: variables.$color-gray-3;
+    background-color: variables.$color-gray-2;
+    border-radius: variables.$radius;
+    padding: 1rem;
+    font-size: variables.$font-size-7;
   }
 }

@@ -52,7 +52,10 @@ export const Header = ({ optionOne, optionTwo }: headerProps) => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay background={"transparent"} />
         <ModalContent borderRadius={0}>
-          <ModalBody>oi</ModalBody>
+          <ModalBody id="container-buttons-modal">
+            <button onClick={() => redirect(optionOne)}>{optionOne}</button>
+            <button onClick={() => redirect(optionTwo)}>{optionTwo}</button>
+          </ModalBody>
         </ModalContent>
       </Modal>
 
