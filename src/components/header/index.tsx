@@ -35,7 +35,7 @@ export const Header = ({ optionOne, optionTwo }: headerProps) => {
       <p id="header-title">Travels</p>
 
       <Button
-        id="hamburguer"
+        id="hamburger"
         border="none"
         background="transparent"
         _hover={{ background: "transparent" }}
@@ -43,9 +43,9 @@ export const Header = ({ optionOne, optionTwo }: headerProps) => {
         outline={0}
       >
         {isOpen ? (
-          <AiOutlineClose id="hamburguer" />
+          <AiOutlineClose id="hamburger" />
         ) : (
-          <GiHamburgerMenu id="hamburguer" />
+          <GiHamburgerMenu id="hamburger" />
         )}
       </Button>
 

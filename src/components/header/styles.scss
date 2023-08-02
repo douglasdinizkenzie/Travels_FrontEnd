@@ -14,13 +14,13 @@
     color: variables.$color-white;
   }
 
-  #hamburguer {
+  #hamburger {
     font-size: variables.$font-size-3;
     color: variables.$color-white;
   }
 
   @media (min-width: variables.$breakpoint-responsive) {
-    #hamburguer {
+    #hamburger {
       display: none;
     }
   }

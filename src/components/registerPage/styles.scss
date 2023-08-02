@@ -1,0 +1,34 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+#container-register-contents {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 2rem 0.5rem;
+  gap: 2rem;
+  border: 1px solid white;
+
+  div:first-child {
+    @include mixins.center;
+    flex-direction: column;
+    border: 1px solid red;
+
+    p:first-child {
+      color: variables.$color-white;
+      font-weight: normal;
+      font-size: variables.$font-size-10;
+
+      @media (min-width: variables.$breakpoint-responsive) {
+        font-size: variables.$font-size-11;
+      }
+    }
+
+    p {
+      color: variables.$color-white;
+      font-weight: normal;
+      font-size: variables.$font-size-8;
+    }
+  }
+}
