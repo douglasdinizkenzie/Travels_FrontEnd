@@ -1,3 +1,16 @@
+import { Footer } from "../../components/footer";
+import { Header } from "../../components/header";
+import { LoginContent } from "../../components/loginContent";
+import "./styles.scss";
+
 export const Login = () => {
-  return <h1>Login</h1>;
+  return (
+    <>
+      <div id="container-img-login">
+        <Header optionOne="Main" optionTwo="Sign Up" />
+        <LoginContent />
+      </div>
+      <Footer />
+    </>
+  );
 };
