@@ -1,7 +1,7 @@
-@use "../../styles/mixins.scss";
 @use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
 
-#container-login-contents {
+#container-register-contents {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   padding: 2rem 0.5rem;
   gap: 2rem;
 
-  div:first-child {
+  .container-sign-up-infos {
     @include mixins.center;
     flex-direction: column;
 
@@ -26,7 +26,8 @@
     p {
       color: variables.$color-white;
       font-weight: normal;
-      font-size: variables.$font-size-7;
+      font-size: variables.$font-size-8;
+      align-self: center;
     }
   }
 
@@ -40,6 +41,23 @@
       font-size: variables.$font-size-6;
       color: variables.$color-white;
       font-weight: normal;
+    }
+
+    textarea {
+      background: variables.$color-white;
+      margin-bottom: 0.5rem;
+      height: 8rem;
+
+      &::placeholder {
+        color: variables.$color-gray;
+        font-size: variables.$font-size-7;
+      }
+
+      &:focus-visible {
+        border-color: variables.$color-green;
+        z-index: 1;
+        box-shadow: 0 0 0 1px variables.$color-green;
+      }
     }
 
     input {
@@ -69,28 +87,47 @@
         color: variables.$color-green-2;
       }
     }
+
+    .container-state-city {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+
+      div {
+        width: 90%;
+      }
+    }
   }
 }
 
 @media (min-width: variables.$breakpoint-responsive-3) {
-  #container-login-contents {
+  #container-register-contents {
     flex-direction: row;
     margin-top: 3rem;
     justify-content: center;
     gap: 4rem;
-    align-items: center;
+    align-items: flex-start;
     padding: 5rem 1rem;
 
+    .container-sign-up-infos {
+      align-items: flex-start;
+
+      p:first-child {
+        white-space: nowrap;
+      }
+    }
+
     .container-form {
-      width: 20rem;
+      width: 18rem;
     }
   }
 }
 
 @media (min-width: variables.$breakpoint-responsive-2) {
-  #container-login-contents {
-    gap: 7rem;
-    div:first-child {
+  #container-register-contents {
+    gap: 4rem;
+    .container-sign-up-infos {
       padding: 1rem;
       p:first-child {
         font-size: variables.$font-size-2;

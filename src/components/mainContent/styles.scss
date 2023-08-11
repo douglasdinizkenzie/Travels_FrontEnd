@@ -2,12 +2,12 @@
 @use "../../styles/mixins.scss";
 
 #container-main-content {
-  //   border: 1px solid white;
   height: auto;
   @include mixins.center;
   flex-direction: column;
   margin-top: 7rem;
   gap: 1rem;
+  padding: 1rem;
 
   h1 {
     color: variables.$color-white;

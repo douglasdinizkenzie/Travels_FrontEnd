@@ -12,12 +12,12 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-export const Header = ({ optionOne, optionTwo }: headerProps) => {
+export const Header = ({ optionOne, optionTwo, logo }: headerProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const navigate = useNavigate();
   const redirect = (options: string) => {
-    if (options == "Login") {
+    if (options === "Login") {
       navigate("/login");
     }
     if (options === "Sign Up") {
@@ -26,16 +26,21 @@ export const Header = ({ optionOne, optionTwo }: headerProps) => {
     if (options === "Main") {
       navigate("/");
     }
+    if (options === "dashboard") {
+      navigate("/dashboard");
+    }
 
     return;
   };
 
   return (
     <div id="header">
-      <p id="header-title">Travels</p>
+      <p id="header-title" onClick={() => redirect(logo)}>
+        Travels
+      </p>
 
       <Button
-        id="hamburguer"
+        id="hamburger"
         border="none"
         background="transparent"
         _hover={{ background: "transparent" }}
@@ -43,9 +48,9 @@ export const Header = ({ optionOne, optionTwo }: headerProps) => {
         outline={0}
       >
         {isOpen ? (
-          <AiOutlineClose id="hamburguer" />
+          <AiOutlineClose id="hamburger" />
         ) : (
-          <GiHamburgerMenu id="hamburguer" />
+          <GiHamburgerMenu id="hamburger" />
         )}
       </Button>
 

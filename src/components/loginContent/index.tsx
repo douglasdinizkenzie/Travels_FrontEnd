@@ -8,7 +8,7 @@ export const LoginContent = () => {
     <div id="container-login-contents">
       <div>
         <p>Login</p>
-        <p>Start the jorney!</p>
+        <p>Start the journey!</p>
       </div>
       <FormControl className="container-form">
         <form>
