@@ -7,7 +7,7 @@ export const Register = () => {
   return (
     <>
       <div id="container-img-signIn">
-        <Header optionOne="Main" optionTwo="Login" />
+        <Header optionOne="Main" optionTwo="Login" logo="Main" />
         <RegisterPage />
       </div>
       <Footer />
