@@ -47,6 +47,7 @@
       background: variables.$color-white;
       margin-bottom: 0.5rem;
       height: 8rem;
+      resize: none;
 
       &::placeholder {
         color: variables.$color-gray;
@@ -64,6 +65,7 @@
       padding: 1.5rem 0.5rem;
       background: variables.$color-white;
       margin-bottom: 0.5rem;
+      border: 1px solid transparent;
 
       &::placeholder {
         color: variables.$color-gray;

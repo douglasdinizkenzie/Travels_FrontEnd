@@ -18,18 +18,21 @@ export const userSchemaRequest = userSchema
     uuid: true,
   })
   .extend({
-    cep: z.string().max(8, "Maximum number of characters is 8"),
+    cep: z
+      .string()
+      .max(8, "Maximum number of characters is 8")
+      .min(1, "CEP is required"),
     state: z.string().max(4, "Maximum number of characters is 4"),
     city: z.string().max(50, "Maximum number of characters is 50"),
     password: z
       .string()
+      .min(5, "Must be at least 5 characters in length")
       .regex(new RegExp(".*[A-Z].*"), "One uppercase character")
       .regex(new RegExp(".*[a-z].*"), "One lowercase character")
       .regex(new RegExp(".*\\d.*"), "One number")
       .regex(
         new RegExp(".*[`~<>?,./!@#$%^&*()\\-_+=\"'|{}\\[\\];:\\\\].*"),
         "One special character"
-      )
-      .min(8, "Must be at least 8 characters in length"),
-    confirmPassword: z.string(),
+      ),
+    confirmPassword: z.string().min(1, "Confirm Password is required"),
   });

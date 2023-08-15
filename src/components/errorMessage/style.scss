@@ -1,0 +1,6 @@
+@use "../../styles/variables.scss";
+
+.error-message {
+  color: variables.$color-red;
+  font-weight: normal;
+}
