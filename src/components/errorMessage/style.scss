@@ -1,0 +1,16 @@
+@use "../../styles/variables.scss";
+
+.error-message {
+  display: none;
+  color: variables.$color-red;
+  font-weight: normal;
+  font-size: 15px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: -1.28rem;
+}
+
+.error-message.visible {
+  display: block;
+}
