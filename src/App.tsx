@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <ChakraProvider>
-        <ToastContainer autoClose={3000} />
+        <ToastContainer theme="dark" autoClose={3000} />
         <AuthProvider>
           <MainRoutes />
         </AuthProvider>

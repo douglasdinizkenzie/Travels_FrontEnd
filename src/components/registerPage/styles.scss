@@ -61,21 +61,28 @@
       }
     }
 
-    input {
-      padding: 1.5rem 0.5rem;
-      background: variables.$color-white;
-      margin-bottom: 0.5rem;
-      border: 1px solid transparent;
+    .input-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
 
-      &::placeholder {
-        color: variables.$color-gray;
-        font-size: variables.$font-size-7;
-      }
+      input {
+        padding: 1.5rem 0.5rem;
+        background: variables.$color-white;
+        margin-bottom: 1.2rem;
+        border: 2px solid transparent;
 
-      &:focus-visible {
-        border-color: variables.$color-green;
-        z-index: 1;
-        box-shadow: 0 0 0 1px variables.$color-green;
+        &::placeholder {
+          color: variables.$color-gray;
+          font-size: variables.$font-size-7;
+        }
+
+        &:focus-visible {
+          border-color: variables.$color-green;
+          z-index: 1;
+          box-shadow: 0 0 0 1px variables.$color-green;
+        }
       }
     }
 
@@ -97,7 +104,7 @@
       align-items: center;
 
       div {
-        width: 90%;
+        width: 100%;
       }
     }
   }

@@ -20,7 +20,7 @@ export const userSchemaRequest = userSchema
   .extend({
     cep: z
       .string()
-      .max(8, "Maximum number of characters is 8")
+      .max(11, "Maximum number of characters is 8")
       .min(1, "CEP is required"),
     state: z.string().max(4, "Maximum number of characters is 4"),
     city: z.string().max(50, "Maximum number of characters is 50"),
@@ -35,4 +35,8 @@ export const userSchemaRequest = userSchema
         "One special character"
       ),
     confirmPassword: z.string().min(1, "Confirm Password is required"),
+  })
+  .refine((data) => data.password === data.confirmPassword, {
+    path: ["confirmPassword"],
+    message: "Password don't match",
   });
