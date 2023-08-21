@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+# Travels - FrontEnt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# ATENÇÃO! 🔔
+### Esse projeto ainda está sendo desenvolvido, porém caso queira dar uma olhadinha, basta mudar para branch developer e seguir as instruções mencionadas abaixo. 😉
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 1 - Sobre
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Travels é um projeto que simula uma rede social para os amantes de viagens, onde podem trocar experiências, histórias e interagirem entre si.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## 2 - Tecnologias
+
+Um pouco das tecnologias que foram utilizadas no projeto até agora: 
+
+- [React](https://react.dev)
+- [typescript](https://www.typescriptlang.org)
+- [SASS](https://sass-lang.com/documentation/)
+- [Chakra ui](https://chakra-ui.com)
+- [react-toastify](https://www.npmjs.com/package/react-toastify)
+- [zod](https://zod.dev)
+- [react-hook-form](https://react-hook-form.com)
+- [axios](https://axios-http.com/ptbr/docs/intro)
+- [react-router-dom](https://reactrouter.com/en/main)
+
+---
+
+
+## 4 - Instalação e uso
+
+### Requisitos:
+- [Npm](https://www.npmjs.com) ou [yarn](https://yarnpkg.com)
+
+Clone o projeto em sua máquina e instale as dependências com o comando:
+
+```shell
+yarn
+ou
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+A aplicação está rodando em servidor local, por tanto, execute a [API](https://github.com/douglasdinizkenzie/Travels_BackEnd/tree/main) localmente para testar a aplicação. Para rodar o servidor BackEnd basta seguir as instruções deixada no readme da API mencionada.
+
+---
+
+Com todas as dependencias devidamente instaladas, basta rodar o seguinte comando:
+
+```shell
+yarn dev
+ou
+npm run dev
+```
+
