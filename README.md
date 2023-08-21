@@ -1,4 +1,4 @@
-# Travels - FrontEnt
+# Travels - FrontEnd
 
 ---
 
