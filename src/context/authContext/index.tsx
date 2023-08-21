@@ -12,6 +12,7 @@ export const AuthContext = createContext<authProviderData>(
 
 export const AuthProvider = ({ children }: props) => {
   const [isLoading, setIsLoading] = useState(false);
+
   const navigate = useNavigate();
 
   const createUser = async (data: UserRequest) => {
@@ -38,7 +39,6 @@ export const AuthProvider = ({ children }: props) => {
   const loginUser = async (data: Login) => {
     try {
       const responseLogin = await api.post("/login", data);
-
       if (responseLogin) {
         localStorage.setItem("@TOKEN-TRAVELS", responseLogin.data.token);
         setIsLoading(false);
