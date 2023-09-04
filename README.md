@@ -30,7 +30,7 @@ Um pouco das tecnologias que foram utilizadas no projeto até agora:
 ---
 
 
-## 4 - Instalação e uso
+## 3 - Instalação e uso
 
 ### Requisitos:
 - [Npm](https://www.npmjs.com) ou [yarn](https://yarnpkg.com)
